@@ -1,3 +1,33 @@
+@font-face {
+  font-family: noeDisplay;
+  src: url("./fonts/noe/noe-display-bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: noeDisplay;
+  src: url("./fonts/noe/noe-display-bold-italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: noeDisplay;
+  src: url("./fonts/noe/noe-display-medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: noeDisplay;
+  src: url("./fonts/noe/noe-display-regular.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: noeDisplay;
+  src: url("./fonts/noe/noe-display-regular-italic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +44,8 @@ html, body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  font-family: noeDisplay, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
 a,
@@ -34,8 +66,30 @@ button, input, select {
   outline: 0;
 }
 
-body {
-  overflow-x: hidden;
+h1 {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  color: #8a8a8a;
+}
+h1 span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: orange;
+  padding-left: 4px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin-top: 1.5rem;
+  color: #747474;
+}
+
+.about-text {
+  padding-right: 6.5rem;
 }
 
 .container {
@@ -54,9 +108,11 @@ body {
 }
 .container .about .content .about-content {
   flex: 1;
+  padding-left: 100px;
+  padding-top: 155px;
 }
 .container .about .content .navbar {
-  height: 80px;
+  height: 88px;
 }
 .container .about .content .navbar ul {
   margin-left: 25px;
@@ -66,13 +122,40 @@ body {
   padding: 30px;
 }
 .container .about .slider {
-  flex: 0.8;
+  width: 488px;
+  height: 600px;
+}
+.container .about .slider img {
+  width: 100%;
+  height: 100%;
 }
 .container .container-left {
   flex: 1;
 }
+.container .container-left .logo {
+  height: 88px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .container-left .logo span {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.container .container-left .logo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
 .container .container-content {
-  width: 1200px;
+  width: 1180px;
 }
 .container .container-right {
   flex: 1;

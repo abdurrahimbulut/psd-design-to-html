@@ -1,6 +1,33 @@
-$primary-color: #333
+@font-face 
+  font-family: noeDisplay
+  src: url("./fonts/noe/noe-display-bold.ttf")
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: noeDisplay
+  src: url("./fonts/noe/noe-display-bold-italic.ttf")
+  font-weight: bold
+  font-style: italic
 
 
+@font-face 
+  font-family: noeDisplay
+  src: url("./fonts/noe/noe-display-medium.ttf")
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: noeDisplay
+  src: url("./fonts/noe/noe-display-regular.ttf")
+  font-weight: lighter
+  font-style: normal
+
+@font-face 
+  font-family: noeDisplay
+  src: url("./fonts/noe/noe-display-regular-italic.ttf")
+  font-weight: lighter
+  font-style: italic
 
 //////////reset////////
 * 
@@ -17,6 +44,8 @@ html,body
   box-sizing: border-box
   width: 100%
   height: 100%
+  font-family: noeDisplay, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif
+  font-size: 18px
 
 a,
 p,
@@ -37,9 +66,27 @@ button,input,select
 
 /////////////////
 
+h1
+  font-weight: lighter
+  font-size: 1.4rem
+  color: #8a8a8a
+  span
+    display: inline-block
+    width: 20px
+    height: 2px
+    background-color: orange
+    padding-left: 4px
 
-body
-  overflow-x: hidden
+h2
+  font-size: 2rem
+
+p
+  margin-top: 1.5rem
+  color: #747474
+
+
+.about-text
+  padding-right: 6.5rem
 
 .container
     display: flex
@@ -47,26 +94,51 @@ body
     height: 100%
     justify-content: center
     .about
-        display: flex
-        .content
-            flex: 1
-            display: flex
-            flex-direction: column
-            .about-content
-                flex: 1
-            .navbar
-                height: 80px
-                ul
-                    margin-left: 25px
-                    li
-                        display: inline-block
-                        padding: 30px
-        .slider
-            flex: .8
+      display: flex
+      .content
+          flex: 1
+          display: flex
+          flex-direction: column
+          .about-content
+              flex: 1
+              padding-left: 100px
+              padding-top: 155px
+          .navbar
+              height: 88px
+              ul
+                  margin-left: 25px
+                  li
+                      display: inline-block
+                      padding: 30px
+      .slider
+          width: 488px
+          height: 600px 
+          img
+            width: 100%
+            height: 100%
     .container-left
-        flex: 1
+      flex: 1
+      .logo
+        height: 88px
+        width: 100%
+        background-color: #000
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+          color: #fff
+          font-size: 3.2rem
+          font-weight: bold
+        div
+          position: absolute
+          bottom: 0
+          right: 0
+          width: 10px
+          height: 10px
+          background-color: orange
     .container-content
-        width: 1200px
+        width: 1180px
     .container-right
         flex:1
         display: flex
