@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+button, input, select {
+  outline: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.container .about {
+  display: flex;
+}
+.container .about .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container .about .content .about-content {
+  flex: 1;
+}
+.container .about .content .navbar {
+  height: 80px;
+}
+.container .about .content .navbar ul {
+  margin-left: 25px;
+}
+.container .about .content .navbar ul li {
+  display: inline-block;
+  padding: 30px;
+}
+.container .about .slider {
+  flex: 0.8;
+}
+.container .container-left {
+  flex: 1;
+}
+.container .container-content {
+  width: 1200px;
+}
+.container .container-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.container .container-right .sidebar {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: space-between;
+}
+.container .container-right .sidebar .sidebar-item {
+  display: block;
+  flex: 1;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+
+/*# sourceMappingURL=style.css.map */

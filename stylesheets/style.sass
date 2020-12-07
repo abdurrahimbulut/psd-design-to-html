@@ -1,0 +1,91 @@
+$primary-color: #333
+
+
+
+//////////reset////////
+* 
+  margin: 0
+  padding: 0
+  border: 0
+
+*,
+*::before,
+*::after 
+  box-sizing: inherit
+
+html,body
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b
+  font-family: inherit
+  text-decoration: none
+
+button,input,select
+  outline: 0
+
+
+/////////////////
+
+
+body
+  overflow-x: hidden
+
+.container
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: center
+    .about
+        display: flex
+        .content
+            flex: 1
+            display: flex
+            flex-direction: column
+            .about-content
+                flex: 1
+            .navbar
+                height: 80px
+                ul
+                    margin-left: 25px
+                    li
+                        display: inline-block
+                        padding: 30px
+        .slider
+            flex: .8
+    .container-left
+        flex: 1
+    .container-content
+        width: 1200px
+    .container-right
+        flex:1
+        display: flex
+        align-items: center
+        .sidebar
+            height: 350px
+            width: 100%
+            display: flex
+            flex-direction: column
+            position: relative
+            align-items: space-between
+            .sidebar-item
+                display: block
+                flex: 1
+                transform-origin: 0 0
+                transform: rotate(270deg)
+                
+
+            
+            
+        
+
