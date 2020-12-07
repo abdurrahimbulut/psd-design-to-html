@@ -1,4 +1,15 @@
 @font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Light.ttf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/roboto/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: noeDisplay;
   src: url("./fonts/noe/noe-display-bold.ttf");
   font-weight: bold;
@@ -73,7 +84,7 @@ h1 {
 }
 h1 span {
   display: inline-block;
-  width: 20px;
+  width: 28px;
   height: 2px;
   background-color: orange;
   padding-left: 4px;
@@ -95,34 +106,40 @@ p {
 .container {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
 }
 .container .about {
   display: flex;
 }
-.container .about .content {
+.container .about .home {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-.container .about .content .about-content {
-  flex: 1;
   padding-left: 100px;
+}
+.container .about .home .about-content {
+  flex: 1;
   padding-top: 155px;
 }
-.container .about .content .navbar {
+.container .about .home .navbar {
   height: 88px;
 }
-.container .about .content .navbar ul {
-  margin-left: 25px;
+.container .about .home .navbar li:first-child {
+  padding-left: 0 !important;
 }
-.container .about .content .navbar ul li {
+.container .about .home .navbar li {
   display: inline-block;
   padding: 30px;
 }
+.container .about .home .navbar li a {
+  color: #979797;
+}
+.container .about .home .navbar li a.active {
+  color: orange;
+}
 .container .about .slider {
-  width: 488px;
+  width: 430px;
   height: 600px;
 }
 .container .about .slider img {
@@ -154,7 +171,7 @@ p {
   height: 10px;
   background-color: orange;
 }
-.container .container-content {
+.container .container-center {
   width: 1180px;
 }
 .container .container-right {
@@ -175,6 +192,32 @@ p {
   flex: 1;
   transform-origin: 0 0;
   transform: rotate(270deg);
+}
+
+.content {
+  padding-left: 100px;
+  padding-top: 155px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-header li {
+  display: inline-block;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+}
+.portfolio-header li > a.active {
+  color: #000 !important;
+}
+.portfolio-header li > a {
+  font-size: 0.8rem;
+  color: #747474;
+}
+
+.nav {
+  font-family: Roboto;
 }
 
 /*# sourceMappingURL=style.css.map */
