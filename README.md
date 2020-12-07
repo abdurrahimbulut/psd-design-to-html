@@ -1,5 +1,5 @@
 ﻿# psd-to-html-portfolio
 
-##Live Demo : https://psd-to-html-portfolio.vercel.app/
+## Live Demo : https://psd-to-html-portfolio.vercel.app/
 
 Sass kullanarak Html'ye çevirdiğim Psd web site tasarımı 
