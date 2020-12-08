@@ -7,7 +7,6 @@
   font-family: Roboto;
   src: url("./fonts/roboto/Roboto-Medium.ttf");
   font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: noeDisplay;
@@ -73,7 +72,7 @@ b {
   text-decoration: none;
 }
 
-button, input, select {
+button, select, input, textarea {
   outline: 0;
 }
 
@@ -256,6 +255,12 @@ p {
   height: 300px;
 }
 
+.view-all-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .read-more a {
   color: orange !important;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -282,6 +287,10 @@ span.date {
   margin-top: 20px;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -296,6 +305,72 @@ span.date {
 
 .justify-content-start {
   justify-content: flex-start;
+}
+
+.contact-title {
+  width: 460px;
+}
+
+button {
+  height: 54px;
+  background-color: transparent;
+  color: #000;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  min-width: 180px;
+  padding: 16px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn-dark {
+  background-color: black;
+  color: #fff;
+}
+
+input {
+  height: 46px;
+  background-color: transparent;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+textarea {
+  background-color: transparent;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contact-form {
+  display: flex;
+  gap: 50px;
+}
+.contact-form .personal-info {
+  flex: 1;
+}
+.contact-form .message {
+  flex: 1;
+}
+
+.form-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.form-item p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
