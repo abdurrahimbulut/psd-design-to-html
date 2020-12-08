@@ -199,6 +199,24 @@ p {
   padding-top: 155px;
 }
 
+.portfolio-photos {
+  display: flex;
+  margin-top: 55px;
+  gap: 8px;
+}
+.portfolio-photos .double {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.portfolio-photos .double img {
+  flex: 1;
+}
+.portfolio-photos .portfolio-column {
+  flex: 1;
+  height: 600px;
+}
+
 .portfolio-header {
   display: flex;
   justify-content: space-between;
