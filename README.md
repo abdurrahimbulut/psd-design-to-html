@@ -4,4 +4,4 @@
 
 Sass kullanarak Html'ye çevirdiğim Psd web site tasarımı 
 
-Psd dosyasını "Designer's Portfolio PSD" dosyasında bulabilirsiniz
+Psd dosyasını "Designer's Portfolio PSD" klasöründe bulabilirsiniz
